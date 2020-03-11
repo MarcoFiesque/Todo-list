@@ -25,7 +25,7 @@ class TodoList extends Component {
                         items : [...this.state.items, this.state.userInput],
                         userInput : ""
                     }, ()=>{localStorage.setItem(JSON.stringify("items"), this.state.items)});
-                    console.log(localStorage.getItem(JSON.parse("items")));
+                    
                     
                 }
             }
